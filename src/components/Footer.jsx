@@ -1,5 +1,5 @@
 import { ArrowUp, Mail } from 'lucide-react';
-import { FiGithub as Github, FiLinkedin as Linkedin, FiTwitter as Twitter } from 'react-icons/fi';
+import { FiGithub as Github, FiLinkedin as Linkedin } from 'react-icons/fi';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -30,17 +30,27 @@ const Footer = () => {
         {/* Left: Socials & Back to Top */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           <div style={{ display: 'flex', gap: '1rem' }}>
-            {[Github, Linkedin, Mail].map((Icon, idx) => (
-              <a
-                key={idx}
-                href="#"
-                style={{ color: 'var(--color-text-secondary)', transition: 'color 0.2s', display: 'flex', alignItems: 'center' }}
-                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}
-                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-secondary)'}
-              >
-                <Icon size={18} />
-              </a>
-            ))}
+            <a href="https://github.com/MusunuriGautami" target="_blank" rel="noopener noreferrer"
+              style={{ color: 'var(--color-text-secondary)', transition: 'color 0.2s', display: 'flex', alignItems: 'center' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-secondary)'}
+            >
+              <Github size={18} />
+            </a>
+            <a href="https://www.linkedin.com/in/gautami-musunuri-17841234a/" target="_blank" rel="noopener noreferrer"
+              style={{ color: 'var(--color-text-secondary)', transition: 'color 0.2s', display: 'flex', alignItems: 'center' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-secondary)'}
+            >
+              <Linkedin size={18} />
+            </a>
+            <a href="mailto:gautamimusunuri@gmail.com"
+              style={{ color: 'var(--color-text-secondary)', transition: 'color 0.2s', display: 'flex', alignItems: 'center' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-text-primary)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-text-secondary)'}
+            >
+              <Mail size={18} />
+            </a>
           </div>
 
           <button

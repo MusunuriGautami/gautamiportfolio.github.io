@@ -90,11 +90,15 @@ const Hero = () => {
           </div>
 
           <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-            {[Github, Linkedin, Mail].map((Icon, idx) => (
-              <SpotlightButton key={idx} href="#" className="icon-only" style={{ color: 'var(--color-text-primary)' }}>
-                <Icon size={20} />
-              </SpotlightButton>
-            ))}
+            <SpotlightButton href="https://github.com/MusunuriGautami" target="_blank" rel="noopener noreferrer" className="icon-only" style={{ color: 'var(--color-text-primary)' }}>
+              <Github size={20} />
+            </SpotlightButton>
+            <SpotlightButton href="https://www.linkedin.com/in/gautami-musunuri-17841234a/" target="_blank" rel="noopener noreferrer" className="icon-only" style={{ color: 'var(--color-text-primary)' }}>
+              <Linkedin size={20} />
+            </SpotlightButton>
+            <SpotlightButton href="mailto:gautamimusunuri@gmail.com" className="icon-only" style={{ color: 'var(--color-text-primary)' }}>
+              <Mail size={20} />
+            </SpotlightButton>
           </div>
         </motion.div>
 
